@@ -1,0 +1,707 @@
+
+body {
+    margin: 0;
+}
+
+
+
+/* About section styles */
+
+#about {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#about h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 0;
+    letter-spacing: 1.2px;
+}
+
+#about h3 {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+#about p {
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.6;
+    letter-spacing: .6px;
+    margin-top: 0;
+}
+
+
+#about .btn {
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#about .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+
+/* Navbar styles */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #282828;
+    color: #fff;
+    z-index: 100;
+
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 24px;
+}
+
+.navbar-left span:hover {
+    color: #0074D9;
+}
+
+.navbar-left img {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.navbar-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 65px;
+}
+
+.navbar-right a:hover {
+    text-decoration: none;
+    color: #0074D9;
+}
+
+
+
+
+
+
+/* Project section styles */
+
+
+#projects-container {
+    margin-left: 130px;
+    margin-right: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#projects {
+    background-color: #F5F5F7;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#projects h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    letter-spacing: 1.2px;
+}
+
+
+#project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    max-width: 1000px;
+}
+
+#project-details h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#project-details h3 {
+    font-size: 24px;
+}
+
+#project-details h4 {
+    font-size: 19px;
+}
+
+#project-details h3,
+#project-details h4,
+#project-details p,
+#project-details ul {
+    text-align: left;
+    width: 100%;
+}
+
+#project-details h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+#project-details p,
+#project-details ul {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: .6px;
+    margin: 10px 0;
+}
+
+#project-details img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#project-details img.badge-img {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+#project-details img[src="imgs/housecat-menu.png"] {
+    width: 50%;
+}
+
+#project-details img[src="imgs/housecat-game.png"] {
+    width: 60%;
+}
+
+#project-details img[src="imgs/housecat-scripting.png"] {
+    width: 32%;
+}
+
+#project-details img[src="imgs/mochi-gif.gif"] {
+    width: 75%;
+}
+
+#project-details img [alt="Static Badge"] {
+    width: 5%;
+}
+
+
+#project-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#project-details ul li {
+    margin-bottom: 10px;
+}
+
+#project-details a {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#project-details a:hover {
+    background-color: #e73c7e;
+    color: white;
+}
+
+
+.project h3 {
+    font-family: "Montserrat";
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.project-description p {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.project-description a {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-image img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.project-tile {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    cursor: default;
+    transition: transform 0.3s;
+    background: #F5F5F7;
+    border-radius: 10px;
+}
+
+.projectile-tile a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.7s;
+    border-radius: 10px;
+}
+
+.project-tile:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h3 {
+    font-family: "Montserrat";
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+    color: #23a6d5;
+}
+
+.project-overlay p {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.project-overlay a {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-overlay a:hover {
+    background-color: #e73c7e;
+    color: white;
+}
+
+
+.project-intro,
+.project-conclusion,
+.project-link {
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    letter-spacing: .6px;
+}
+
+.project-conclusion .btn,
+.project-link .btn {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-conclusion .btn:hover {
+    background-color: #e73c7e;
+    color: white;
+}
+
+.project-link .btn:hover {
+    background-color: #0074D9;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#projects .btn {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#projects .btn:hover {
+    background-color: #e73c7e;
+    color: #000;
+    border-color: #e73c7e;
+}
+
+.project-link .btn:hover {
+    background-color: #0074D9 !important;
+    color: white;
+    border-color: #0074D9 !important;
+}
+
+
+
+
+
+
+/* Contact section styles */
+
+
+#contact {
+    background-color: #282828;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+
+}
+
+.contact-main h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.contact-main p {
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.6;
+    letter-spacing: .6px;
+    margin-top: 0;
+}
+
+.contact-form-container {
+    padding: 4rem;
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 26, 27);
+    border-radius: 5px;
+}
+
+.contact-form-container label {
+    font-family: "Montserrat", serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+}
+
+form {
+    margin-top: 20px;
+    width: 60vh;
+}
+
+.contact-form-container input, .contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgb(24, 26, 27);
+    color: #fff;
+    transition: border 0.3s;
+}
+
+.contact-form-container textarea {
+    border: 1px solid #fff;
+    height: 10rem;
+    resize: vertical;
+}
+
+.contact-form-container input:focus, .contact-form-container textarea:focus {
+    outline: none;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #0074D9, #e73c7e) 1;
+}
+
+button {
+    outline:none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius:40px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    letter-spacing:1px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    &:hover {
+        color: #fff;
+        background: #23a6d5;
+        border-color: #23a6d5;
+    }
+    &:active {
+    //letter-spacing: 2px;
+        letter-spacing: 2px ;
+    }
+    &:after {
+        content:"SUBMIT";
+    }
+}
+.onclick {
+    width: 40px;
+    border-color: #bbbbbb;
+    border-width:3px;
+    font-size:0;
+    border-left-color: #23a6d5;
+    animation: rotating 2s 0.25s linear infinite;
+
+    &:after {
+        content:"";
+    }
+    &:hover {
+        color: #23a6d5;
+        background: white;
+    }
+}
+.validate {
+    font-size:13px;
+    color: white;
+    background: #23a6d5;
+    &:after {
+        font-family: 'Font Awesome 5 Free', serif;
+        font-weight: 900;
+        content:"\f00c";
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* Footer styles */
+
+footer {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    font-family: "Montserrat", serif;
+}
+
+.footer-left h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.footer-right {
+    font-family: "Montserrat", serif;
+    display: flex;
+    align-items: center;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin-top: 10px;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+}
