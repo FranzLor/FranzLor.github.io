@@ -38,7 +38,7 @@ body, html {
 
 #about h2 {
     font-family: "Montserrat";
-    font-size: 3rem;
+    font-size: 3.6rem;
     color: white;
     line-height: 1.8;
     margin-bottom: 0;
@@ -47,7 +47,7 @@ body, html {
 
 #about h3 {
     font-family: "Montserrat";
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     color: white;
     line-height: 1.6;
     margin-bottom: 0;
@@ -55,7 +55,7 @@ body, html {
 
 #about p {
     font-family: "Montserrat";
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: white;
     line-height: 1.6;
     letter-spacing: .6px;
@@ -80,6 +80,30 @@ body, html {
 #about .btn:hover {
     background-color: #fff;
     color: #000;
+}
+
+
+/* Response Design About styles */
+
+@media (max-width: 620px) {
+    #about h2 {
+        line-height: 1.4;
+    }
+
+    #about h3 {
+        font-size: 1.6rem;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .button-container .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 10px 20px;
+    }
 }
 
 
@@ -734,6 +758,36 @@ button {
         transform: rotate(360deg);
     }
 }
+
+
+/* Responsive Desgin for Contact styles */
+@media (max-width: 615px) {
+    .contact-form-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .contact-form-container label {
+        font-size: 1rem;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
 
 
 
