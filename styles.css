@@ -55,7 +55,7 @@ body, html {
 
 #about p {
     font-family: "Montserrat";
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: white;
     line-height: 1.6;
     letter-spacing: .6px;
@@ -97,6 +97,8 @@ body, html {
     #about p {
         font-size: 1.2rem;
         line-height: 1.5;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .button-container .btn {
@@ -131,7 +133,12 @@ nav {
     display: flex;
     align-items: center;
     font-family: "Montserrat";
-    font-size: 24px;
+    font-size: 1.8rem;
+}
+
+.navbar-left span {
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .navbar-left span:hover {
@@ -141,7 +148,6 @@ nav {
 .navbar-left img {
     margin-right: 10px;
     margin-left: 10px;
-    border-radius: 50%;
 }
 
 .navbar-right {
@@ -154,7 +160,7 @@ nav {
 
 .navbar-right a {
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
     margin-left: 15px;
@@ -288,7 +294,7 @@ body.menu-open, html.menu-open {
         font-size: 2rem;
         color: #fff;
         text-decoration: none;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .mobile-menu a:hover {
@@ -343,6 +349,10 @@ body.menu-open, html.menu-open {
     margin: 0 auto;
     padding: 80px 20px 20px;
     max-width: 1000px;
+}
+
+#project-details h1 {
+    text-align: center;
 }
 
 #project-details h2 {
@@ -624,6 +634,31 @@ body.menu-open, html.menu-open {
 
 
 
+/* Responsive Design for Project Dev styles */
+@media (max-width: 800px) {
+    img[alt="Housecat Game Engine"] {
+        width: 100% !important;
+        height: auto;
+    }
+
+    img[alt="Mochi, Run! Gameplay"] {
+        width: 100% !important;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .project-intro p {
+        font-size: 1.1rem;
+    }
+
+    .project-conclusion p {
+        font-size: 1.1rem;
+    }
+}
+
+
 
 
 
@@ -850,7 +885,7 @@ footer {
 .footer-right a {
     color: #fff;
     text-decoration: none;
-    margin-left: 15px;
+    margin: 20px;
 }
 
 .footer-bottom {
@@ -891,7 +926,7 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #232323;
+    background-color: #282828;
 }
 
 ::-webkit-scrollbar-thumb {
