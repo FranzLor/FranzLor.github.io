@@ -476,8 +476,8 @@ body.menu-open, html.menu-open {
 
 .project-tile {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
     margin: 20px;
     margin-bottom: 100px;
     overflow: hidden;
@@ -511,31 +511,38 @@ body.menu-open, html.menu-open {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.7s;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     border-radius: 10px;
 }
 
 .project-tile:hover .project-overlay {
     opacity: 1;
+    visibility: visible;
+}
+
+.project-tile.active .project-overlay {
+    opacity: 1;
+    visibility: visible;
 }
 
 .project-overlay h3 {
     font-family: "Montserrat";
-    font-size: 2.0rem;
+    font-size: 2.1rem;
     margin-bottom: 10px;
     color: #23a6d5;
 }
 
 .project-overlay p {
     font-family: "Montserrat";
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 10px;
     text-align: center;
 }
 
 .project-overlay a {
     font-family: "Montserrat";
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #333;
     text-decoration: none;
     background-color: #fff;

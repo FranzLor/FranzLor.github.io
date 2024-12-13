@@ -212,7 +212,28 @@
     </div>
 </footer>
 
+
+
 <script src="hamburger.js"></script>
+
+
+<!-- Mobile / Tablet Project Tile -->
+<script>
+    // Add click event listener to all project tiles
+    document.querySelectorAll('.project-tile').forEach(tile => {
+        tile.addEventListener('click', function (e) {
+            // Remove 'active' class from other tiles
+            document.querySelectorAll('.project-tile.active').forEach(activeTile => {
+                if (activeTile !== tile) {
+                    activeTile.classList.remove('active');
+                }
+            });
+
+            // Toggle 'active' class on the clicked tile
+            this.classList.toggle('active');
+        });
+    });
+</script>
 
 <!-- Contact Form Script -->
 <script type="text/javascript">
