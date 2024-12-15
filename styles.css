@@ -805,8 +805,17 @@ button {
 /* Responsive Desgin for Contact styles */
 @media (max-width: 615px) {
     .contact-form-container {
-        width: 90%;
-        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .contact-form-container .form-element {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
     }
 
     .contact-form-container label {
