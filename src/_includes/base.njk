@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Preload important resources -->
+    <link rel="preload" href="/scripts/hamburger.js" as="script">
+    <link rel="preload" href="/scripts/smooth-scrolling.js" as="script">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+{% include 'header.njk' %}
+
+<main>
+    {{ content | safe }}
+</main>
+
+{% include 'footer.njk' %}
+
+<!-- Load jQuery only if needed -->
+{% if page.url == '/' %}
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+{% endif %}
+
+<!-- Core scripts -->
+<script src="/scripts/hamburger.js"></script>
+<script src="/scripts/smooth-scrolling.js"></script>
+
+<!-- Page-specific scripts -->
+{% if page.url == '/' %}
+    <script src="/scripts/scroll-animations.js"></script>
+    <script src="/scripts/devblog-animations.js"></script>
+    <script src="/scripts/contact-button-animations.js"></script>
+    <script src="/scripts/navigation.js"></script>
+
+    <script src="/scripts/validate.js"></script>
+
+    <!-- EmailJS only needed on homepage -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+{% endif %}
+</body>
+</html>

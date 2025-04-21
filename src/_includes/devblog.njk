@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+
+<article id="devblog-details">
+    <h2>{{ title }}</h2>
+    <h1>{{ subtitle }}</h1>
+
+    <div class="devblog-meta">
+        <span class="devblog-author">by {{ author or "Franz Lor" }}</span>
+        <span class="devblog-date">{{ date | date("MMMM d, yyyy") }}</span>
+    </div>
+
+    {% if thumbnail %}
+        <img src="{{ thumbnail }}" alt="{{ alt }}" class="devblog-main-image">
+    {% endif %}
+
+    <div class="devblog-content">
+        {{ content | safe }}
+    </div>
+
+    <div class="devblog-footer">
+        <div class="button-container">
+            <a href="/#devblog" class="btn">Back to DevBlog</a>
+        </div>
+    </div>
+</article>

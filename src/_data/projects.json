@@ -1,0 +1,66 @@
+{
+  "projectOrder": [
+    "housecat",
+    "mochi-run",
+    "turret-tank-blitz",
+    "idle-monster-clicker",
+    "fpsfrenzy",
+    "bytehopper"
+  ],
+  "projectDetails": {
+    "housecat": {
+      "title": "Housecat Game Engine",
+      "subtitle": "ECS Game Engine for 2D Games with Scripting Capabilities",
+      "logo": "/icons/HousecatGE.png",
+      "alt": "Housecat Game Engine Logo",
+      "width": 200,
+      "height": 200,
+      "categories": ["C++", "Engine", "ECS"]
+    },
+    "mochi-run": {
+      "title": "Mochi, Run!",
+      "subtitle": "2D Infinite, Side-Scrolling Game",
+      "logo": "/icons/mochi.png",
+      "alt": "Mochi, Run! Logo",
+      "width": 200,
+      "height": 200,
+      "categories": ["Raylib", "C#", "2D"]
+    },
+    "turret-tank-blitz": {
+      "title": "Turret Tank Blitz",
+      "subtitle": "Third-Person Shooter with AI Enemies",
+      "logo": "/icons/tank.png",
+      "alt": "Turret Tank Blitz Logo",
+      "width": 200,
+      "height": 200,
+      "categories": ["Unreal", "C++", "3D"]
+    },
+    "idle-monster-clicker": {
+      "title": "Idle Monster Clicker",
+      "subtitle": "2D Incremental, Clicking Game",
+      "logo": "/icons/idle.png",
+      "alt": "Idle Monster Clicker",
+      "width": 200,
+      "height": 200,
+      "categories": ["Unreal", "Scripting", "2D"]
+    },
+    "fpsfrenzy": {
+      "title": "FPSFrenzy",
+      "subtitle": "First-Person Shooter with Online Networking",
+      "logo": "/icons/fpsfrenzy.png",
+      "alt": "FPSFrenzy Logo",
+      "width": 200,
+      "height": 200,
+      "categories": ["Unity", "C#", "Online", "Photon", "3D"]
+    },
+    "bytehopper": {
+      "title": "Byte Hopper",
+      "subtitle": "Arcade Action Game with Procedural Generation",
+      "logo": "/icons/ByteHopperIcon.png",
+      "alt": "Byte Hopper Logo",
+      "width": 200,
+      "height": 200,
+      "categories": ["Unity", "C#", "Procedural", "2.5D"]
+    }
+  }
+}

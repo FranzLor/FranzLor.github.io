@@ -1,0 +1,16 @@
+{
+  "devblogOrder": [
+    "pickups"
+  ],
+  "devblogDetails": {
+    "pickups": {
+      "title": "Create Pickups for Your 2D Games",
+      "subtitle": "Learn how to implement a pickup system for 2D games using Unity",
+      "thumbnail": "/imgs/devblogs/pickups/Thumbnail.gif",
+      "alt": "PickUps Preview",
+      "date": "2025-04-22",
+      "category": "Unity Game Development",
+      "excerpt": "Learn how to implement a pickup system for 2D games using Unity"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+---
+layout: base.njk
+---
+
+<section id="project-details">
+    <h2>{{ title }}</h2>
+    <h1>{{ subtitle }}</h1>
+
+    {% if featuredImage %}
+        <img src="{{ featuredImage }}" alt="{{ title }}" {% if imageWidth %}width="{{ imageWidth }}"{% endif %}>
+    {% endif %}
+
+    <h3>Background</h3>
+    {{ content | safe }}
+
+    {% if technologies %}
+        <h3>Technologies Used</h3>
+        <ul class="technologies">
+            {% for tech in technologies %}
+                <li><img class="badge-img" src="{{ tech.badge }}" alt="{{ tech.name }}"></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if learnings %}
+        <h3>What I Learned</h3>
+        {% for learning in learnings %}
+            <h4>{{ learning.title }}</h4>
+            {{ learning.content | safe }}
+        {% endfor %}
+    {% endif %}
+
+    {% if projectLink %}
+        <div class="project-link">
+            <div class="button-container">
+                <a href="{{ projectLink }}" class="btn">View Project</a>
+            </div>
+        </div>
+    {% endif %}
+</section>
