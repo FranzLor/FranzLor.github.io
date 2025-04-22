@@ -1,4 +1,3 @@
-const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 const path = require('path');
 const markdownIt = require("markdown-it");
@@ -8,6 +7,9 @@ const md = markdownIt({
     linkify: true
 });
 
+
+const { DateTime } = require("luxon");
+
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         'scripts': 'scripts',
@@ -15,11 +17,13 @@ module.exports = function(eleventyConfig) {
         'projects': 'projects',
         'devblogs': 'devblogs',
         'icons': 'icons',
-        'imgs': 'imgs',
         'CNAME': 'CNAME'
     });
 
     eleventyConfig.addPassthroughCopy("CNAME");
+
+    eleventyConfig.addPassthroughCopy('imgs');
+
 
     // image renderer with lazy loading
     md.renderer.rules.image = (tokens, idx) => {
@@ -27,14 +31,14 @@ module.exports = function(eleventyConfig) {
         let src = token.attrGet("src");
         const alt = token.content || "";
 
-        // If the image is in the project-specific folder
-        if (src.startsWith('/imgs/projects/')) {
-            // Ensure the path is correct in the output
-            src = src.replace('/imgs/projects/', '/imgs/');
+        // Fix the src to ensure it's a valid path
+        if (src && src.startsWith('/imgs/')) {
+            return `<img src="${src}" alt="${alt}" loading="lazy">`;
         }
 
-        return `<img ${src}="" alt="${alt}" loading="lazy">`;
+        return `<img src="${src}" alt="${alt}" loading="lazy">`;
     };
+
 
     eleventyConfig.setLibrary("md", md);
 
@@ -44,9 +48,9 @@ module.exports = function(eleventyConfig) {
     });
 
     // DATE FILTER
-    eleventyConfig.addFilter("date", (dateObj, format = "MMMM d, yyyy") => {
-        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(format);
-    });
+    eleventyConfig.addFilter("date", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    })
 
     // PROJECT
     eleventyConfig.addCollection("projects", function(collSectionApi) {
@@ -68,14 +72,10 @@ module.exports = function(eleventyConfig) {
             const post = devblogData.devblogDetails[slug];
             return {
                 ...post,
-                // Change this to match your folder name
-                url: `/devblogs/${slug}/`,  // Now using plural "devblogs"
+                url: `/devblogs/${slug}/`,
                 slug: slug,
-                formattedDate: new Date(post.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                })
+                // Don't preformat date here anymore
+                date: new Date(post.date)
             };
         });
     });

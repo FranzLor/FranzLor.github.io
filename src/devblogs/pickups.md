@@ -2,7 +2,7 @@
 title: Create Pickups for Your 2D Games
 layout: devblog.njk
 subtitle: Learn how to implement a pickup system for 2D games using Unity
-date: 2025-04-21
+date: 2025-04-22
 category: Unity Game Development
 thumbnail: /imgs/devblogs/pickups/Thumbnail.png
 alt: PickUps Preview

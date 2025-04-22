@@ -84,7 +84,7 @@ layout: 'base.njk'
                     <div class="devblog-overlay">
                         <h3>{{ post.title }}</h3>
                         <p>{{ post.subtitle }}</p>
-                        <span class="devblog-date">{{ post.formattedDate }}</span>
+                        <span class="devblog-date">{{ post.date | date }}</span>
                         <a href="{{ post.url }}">Read Article</a>
                     </div>
                 </div>

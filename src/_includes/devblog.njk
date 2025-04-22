@@ -8,7 +8,7 @@ layout: base.njk
 
     <div class="devblog-meta">
         <span class="devblog-author">by {{ author or "Franz Lor" }}</span>
-        <span class="devblog-date">{{ date | date("MMMM d, yyyy") }}</span>
+        <span class="devblog-date">{{ date | date }}</span>
     </div>
 
     {% if thumbnail %}
