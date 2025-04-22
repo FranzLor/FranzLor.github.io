@@ -15,7 +15,8 @@ module.exports = function(eleventyConfig) {
         'projects': 'projects',
         'devblogs': 'devblogs',
         'icons': 'icons',
-        'imgs': 'imgs'
+        'imgs': 'imgs',
+        'CNAME': 'CNAME'
     });
 
     eleventyConfig.addPassthroughCopy("CNAME");
