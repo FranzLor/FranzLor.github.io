@@ -77,7 +77,7 @@
 practical way.</p>
 <p>In this devblog we'll dive into <strong>creating a pickup system for 2D games</strong>—think coins, health packs,<br>
 or stamina boosts that make games more interactive and rewarding.</p>
-<p><img src="/imgs/devblogs/pickups/Thumbnail.gif" alt="Pickups Thumbnail" loading="lazy"></p>
+<p><img /imgs/devblogs/pickups/Thumbnail.gif="" alt="Pickups Thumbnail" loading="lazy"></p>
 <p>By the end of this tutorial, you'll have a flexible system that spawns pickups, complete with visual polish<br>
 like spawning animations and magnetic interactions.</p>
 <p>Also, I'd like to mention that although this tutorial will be focused on Unity, it's still possible to achieve the same results<br>
@@ -86,7 +86,7 @@ in other engines like Unreal.</p>
 <h3>The Two-Part System</h3>
 <p>To create a pickup system, you'll need two scripts that splits the responsibilities.<br>
 Here's a quick visual on how it could work:</p>
-<p><img src="/imgs/devblogs/pickups/PickupDiagram.png" alt="Pickups Diagram" loading="lazy"></p>
+<p><img /imgs/devblogs/pickups/PickupDiagram.png="" alt="Pickups Diagram" loading="lazy"></p>
 <h4>PickupSpawner.cs</h4>
 <ul>
 <li>Responsible for spawning the pickups.</li>
@@ -237,7 +237,7 @@ if (randomNum == 3) Instantiate(staminaPrefab, transform.position, Quaternion.id
 }
 </code></pre>
 <p>Regardless, of which you choose, put all that logic inside your method—I called my <code>DropItems()</code>. Here's a preview of the drop chances:</p>
-<p><img src="/imgs/devblogs/pickups/PickupSpawnerRandom.gif" alt="Pickups Randomness" loading="lazy"></p>
+<p><img /imgs/devblogs/pickups/PickupSpawnerRandom.gif="" alt="Pickups Randomness" loading="lazy"></p>
 <p>Now you might be asking where would you call this method? You could call it when the player kills an enemy or when<br>
 they open a chest (really during any player interaction).</p>
 <p>For example, I made a Destructible script where I attached it to objects like bushes. When the player shoots at it,<br>
@@ -258,7 +258,7 @@ the bush game object will be destroyed. But just before it gets destroyed, I cal
 </code></pre>
 <p>Don't forget to attach your PickupSpawner script into game objects where you want pickups to spawn from.<br>
 And most importantly, reference your pickup game objects!</p>
-<p><img src="/imgs/devblogs/pickups/PickupSpawner.png" alt="Pickups Thumbnail" loading="lazy"></p>
+<p><img /imgs/devblogs/pickups/PickupSpawner.png="" alt="Pickups Thumbnail" loading="lazy"></p>
 <hr>
 <h3>Pickup Script</h3>
 <p>As for the Pickup script, it requires a little more finesse.</p>
@@ -365,7 +365,7 @@ It might look like this:</p>
 <p>For some visual polish, instead of just instantly spawning a pickup when it is called from the PickupSpawner,<br>
 it's always a good to add details like animations. I'll show you how to add a 'popping' like effect where the pickup spawns out with an arc.</p>
 <p>Here's a preview of that:<br>
-<img src="/imgs/devblogs/pickups/PickupMagnets.gif" alt="Pickups Magnet" loading="lazy"></p>
+<img /imgs/devblogs/pickups/PickupMagnets.gif="" alt="Pickups Magnet" loading="lazy"></p>
 <p>First you'll need access to Unity's <code>AnimationCurve</code> and reference that. Then, you'll need to define how high the<br>
 pickup will go and curve, and then how long it'll last.</p>
 <pre><code>[SerializeField] private AnimationCurve animationCurve;
@@ -400,7 +400,7 @@ our defined linearT:</p>
 </code></pre>
 <p>Now don't forget to set up the animation curve in the Inspector. You could set up your animation curve in<br>
 any way you see fit to match your designs. But I recommend a downwards parabola:</p>
-<p><img src="/imgs/devblogs/pickups/PickupAnimationArc.gif" alt="Pickup Conclusion" loading="lazy"></p>
+<p><img /imgs/devblogs/pickups/PickupAnimationArc.gif="" alt="Pickup Conclusion" loading="lazy"></p>
 <p>The whole routine should look something like so:</p>
 <pre><code>Vector2 startPoint = transform.position;
 
@@ -429,12 +429,12 @@ while (timePassed &lt; popDuration)
 </code></pre>
 <p>Now go test out your pickup script!<br>
 If you want a similar look as the one above, here are the settings I did:</p>
-<p><img src="/imgs/devblogs/pickups/Pickup.png" alt="Pickup Conclusion" loading="lazy"></p>
+<p><img /imgs/devblogs/pickups/Pickup.png="" alt="Pickup Conclusion" loading="lazy"></p>
 <hr>
 <h3>Conclusion</h3>
 <p>Give yourself a pat on the back because you just created a handy pickup system. As you can see, it's a small yet<br>
 modular system where you can design it to fit your needs.</p>
-<p><img src="/imgs/devblogs/pickups/Conclusion.gif" alt="Pickup Conclusion" loading="lazy"></p>
+<p><img /imgs/devblogs/pickups/Conclusion.gif="" alt="Pickup Conclusion" loading="lazy"></p>
 <p>Here's both of the scripts if something isn't working as expected (I completely understand your pain)<br>
 or you can download the zip <a href="https://gist.github.com/FranzLor/83c1b4c1020101ecfa5432bc1c8c9be6/archive/4be6e5ba4154f13c70936192e7bf02ed67a39454.zip">here</a>.</p>
 <div class="gist-container">

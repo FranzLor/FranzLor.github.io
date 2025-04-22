@@ -16,10 +16,16 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          cd src
+          npm ci
+          cd ..
 
       - name: Build Site
-        run: npm run build
+        run: |
+          cd src
+          npm run build
+          cd ..
 
       - name: Verify Build
         run: |

@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
+const path = require('path');
 const markdownIt = require("markdown-it");
 const md = markdownIt({
     html: true,
@@ -9,12 +10,12 @@ const md = markdownIt({
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
-        'src/scripts': 'scripts',
-        'src/styles.css': '/styles.css',
-        'src/projects': '/projects',
-        'src/devblogs': '/devblogs',
-        'src/icons': '/icons',
-        'src/imgs': '/imgs'
+        'scripts': 'scripts',
+        'styles.css': 'styles.css',
+        'projects': 'projects',
+        'devblogs': 'devblogs',
+        'icons': 'icons',
+        'imgs': 'imgs'
     });
 
     eleventyConfig.addPassthroughCopy("CNAME");
@@ -31,7 +32,7 @@ module.exports = function(eleventyConfig) {
             src = src.replace('/imgs/projects/', '/imgs/');
         }
 
-        return `<img src="${src}" alt="${alt}" loading="lazy">`;
+        return `<img ${src}="" alt="${alt}" loading="lazy">`;
     };
 
     eleventyConfig.setLibrary("md", md);
@@ -48,7 +49,7 @@ module.exports = function(eleventyConfig) {
 
     // PROJECT
     eleventyConfig.addCollection("projects", function(collSectionApi) {
-        const projectData = require('./src/_data/projects.json');
+        const projectData = require('./_data/projects.json');
         return projectData.projectOrder.map(slug => {
             const project = projectData.projectDetails[slug];
             return {
@@ -61,7 +62,7 @@ module.exports = function(eleventyConfig) {
 
     // DEVBLOGS
     eleventyConfig.addCollection("devblog", function(collectionApi) {
-        const devblogData = require('./src/_data/devblogs.json');
+        const devblogData = require('./_data/devblogs.json');
         return devblogData.devblogOrder.map(slug => {
             const post = devblogData.devblogDetails[slug];
             return {
@@ -80,8 +81,8 @@ module.exports = function(eleventyConfig) {
 
     return {
         dir: {
-            input: "src",
-            output: "docs",
+            input: ".",
+            output: "../docs",
             includes: "_includes",
             data: "_data"
         }
