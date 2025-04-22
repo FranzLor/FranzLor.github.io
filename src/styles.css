@@ -409,24 +409,24 @@ body.menu-open, html.menu-open {
     height: auto !important;
 }
 
-#project-details img[src="/imgs/housecat-menu.png"] {
-    width: 50%;
+#project-details img[src="/imgs/projects/housecat/housecat-menu.png"] {
+    width: 50% !important;
 }
 
-#project-details img[src="/imgs/housecat-game.png"] {
-    width: 60%;
+#project-details img[src="/imgs/projects/housecat/housecat-game.png"] {
+    width: 60% !important;
 }
 
-#project-details img[src="/imgs/housecat-scripting.png"] {
-    width: 32%;
+#project-details img[src="/imgs/projects/housecat/housecat-scripting.png"] {
+    width: 32% !important;
 }
 
-#project-details img[src="/imgs/mochi-gif.gif"] {
-    width: 75%;
+#project-details img[src="/imgs/projects/mochi/mochi-gif.gif"] {
+    width: 75% !important;
 }
 
-#project-details img [alt="Static Badge"] {
-    width: 5%;
+#project-details img[alt="Static Badge"] {
+    width: 5% !important;
 }
 
 
