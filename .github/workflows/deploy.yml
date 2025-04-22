@@ -19,11 +19,15 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm install
+          npm ci --include=optional
+
+      - name: Fix Eleventy Permissions
+        run: |
+          chmod +x ./node_modules/.bin/eleventy
 
       - name: Build Site
         run: |
-          npm run build
+          npx eleventy
 
       - name: Verify Build
         run: |
