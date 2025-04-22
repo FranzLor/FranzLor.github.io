@@ -19,12 +19,10 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd src
           npm install
 
       - name: Build Site
         run: |
-          cd src
           npm run build
 
       - name: Verify Build
