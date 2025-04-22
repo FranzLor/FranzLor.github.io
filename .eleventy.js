@@ -1,4 +1,3 @@
-const Image = require("@11ty/eleventy-img");
 const path = require('path');
 const markdownIt = require("markdown-it");
 const md = markdownIt({
