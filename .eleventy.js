@@ -50,7 +50,7 @@ module.exports = function(eleventyConfig) {
 
     // PROJECT
     eleventyConfig.addCollection("projects", function(collSectionApi) {
-        const projectData = require('./_data/projects.json');
+        const projectData = require('./src/_data/projects.json');
         return projectData.projectOrder.map(slug => {
             const project = projectData.projectDetails[slug];
             return {
@@ -63,7 +63,7 @@ module.exports = function(eleventyConfig) {
 
     // DEVBLOGS
     eleventyConfig.addCollection("devblog", function(collectionApi) {
-        const devblogData = require('./_data/devblogs.json');
+        const devblogData = require('./src/_data/devblogs.json');
         return devblogData.devblogOrder.map(slug => {
             const post = devblogData.devblogDetails[slug];
             return {
@@ -82,8 +82,8 @@ module.exports = function(eleventyConfig) {
 
     return {
         dir: {
-            input: ".",
-            output: "../docs",
+            input: "src",
+            output: "docs",
             includes: "_includes",
             data: "_data"
         }

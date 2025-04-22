@@ -6,9 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./src
     steps:
       - uses: actions/checkout@v3
         with:
@@ -19,7 +16,6 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: 'src/package-lock.json'
 
       - name: Install Dependencies
         run: npm ci
@@ -29,12 +25,12 @@ jobs:
 
       - name: Verify Build
         run: |
-          ls -la ../docs/
-          [ -f ../docs/index.html ] || exit 1
+          ls -la docs/
+          [ -f docs/index.html ] || exit 1
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../docs
+          publish_dir: ./docs
           keep_files: false
