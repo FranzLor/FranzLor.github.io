@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franz Lor Portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Preload important resources -->
+    <link rel="preload" href="/scripts/hamburger.js" as="script">
+    <link rel="preload" href="/scripts/smooth-scrolling.js" as="script">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header>
+    <nav>
+        <!-- Left side of the navbar -->
+        <div class="navbar-left">
+            <a href="https://github.com/FranzLor" target="_blank" rel="noopener noreferrer">
+                <img src="/icons/GitHubIcon.png" alt="GitHub Profile Pic" width="40" height="40">
+            </a>
+            <span>FRANZ LOR</span>
+        </div>
+
+        <!-- Right side of the navbar -->
+        <div class="navbar-right">
+            <a href="/#about" class="nav-link">ABOUT</a>
+            <a href="/#projects" class="nav-link">PROJECTS</a>
+            <a href="/#devblog" class="nav-link">DEVBLOG</a>
+            <a href="https://www.nexusmods.com/users/81433168/?tab=user+files" target="_blank" rel="noopener noreferrer" class="nav-link">MODS</a>
+            <a href="/#contact" class="nav-link">CONTACT</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-btn" id="closeBtn"></div>
+        <a href="/#about" class="mobile-nav-link">ABOUT</a>
+        <a href="/#projects" class="mobile-nav-link">PROJECTS</a>
+        <a href="/#devblog" class="mobile-nav-link">DEVBLOG</a>
+        <a href="https://www.nexusmods.com/users/81433168/?tab=user+files" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">MODS</a>
+        <a href="/#contact" class="mobile-nav-link">CONTACT</a>
+    </div>
+</header>
+
+<main>
+    
+<section id="about">
+    <h2>HEY THERE, I'M FRANZ</h2>
+    <h3><strong>I'm a programmer.</strong></h3><br>
+    <p>
+        I have a passion for games—whether it's playing or learning all about them.<br>
+        With this passion comes my motivation to develop<br>
+        games using C++, C#, or with game engines.<br><br>
+        <strong>Check them out here</strong>!
+    </p>
+    <div class="button-container">
+        <a href="#projects" class="btn">PROJECTS</a>
+    </div>
+
+</section>
+
+<section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="project-intro">
+        <p>
+            Check out the projects I've worked on.<br>
+            Each one carrying a unique learning experience.<br>
+            <strong>Click on a project to learn more about it</strong>.<br>
+        </p>
+    </div>
+
+    <div class="projects-grid">
+        
+            <div class="project">
+                <div class="project-tile">
+                    <img
+                            src="/icons/HousecatGE.png"
+                            alt="Housecat Game Engine Logo"
+                            width="200"
+                            height="200"
+                    >
+                    <div class="project-overlay">
+                        <h3>Housecat Game Engine</h3>
+                        <p>ECS Game Engine for 2D Games with Scripting Capabilities</p>
+                        <a href="/projects/housecat/">View Project</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project">
+                <div class="project-tile">
+                    <img
+                            src="/icons/mochi.png"
+                            alt="Mochi, Run! Logo"
+                            width="200"
+                            height="200"
+                    >
+                    <div class="project-overlay">
+                        <h3>Mochi, Run!</h3>
+                        <p>2D Infinite, Side-Scrolling Game</p>
+                        <a href="/projects/mochi-run/">View Project</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project">
+                <div class="project-tile">
+                    <img
+                            src="/icons/tank.png"
+                            alt="Turret Tank Blitz Logo"
+                            width="200"
+                            height="200"
+                    >
+                    <div class="project-overlay">
+                        <h3>Turret Tank Blitz</h3>
+                        <p>Third-Person Shooter with AI Enemies</p>
+                        <a href="/projects/turret-tank-blitz/">View Project</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project">
+                <div class="project-tile">
+                    <img
+                            src="/icons/idle.png"
+                            alt="Idle Monster Clicker"
+                            width="200"
+                            height="200"
+                    >
+                    <div class="project-overlay">
+                        <h3>Idle Monster Clicker</h3>
+                        <p>2D Incremental, Clicking Game</p>
+                        <a href="/projects/idle-monster-clicker/">View Project</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project">
+                <div class="project-tile">
+                    <img
+                            src="/icons/fpsfrenzy.png"
+                            alt="FPSFrenzy Logo"
+                            width="200"
+                            height="200"
+                    >
+                    <div class="project-overlay">
+                        <h3>FPSFrenzy</h3>
+                        <p>First-Person Shooter with Online Networking</p>
+                        <a href="/projects/fpsfrenzy/">View Project</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project">
+                <div class="project-tile">
+                    <img
+                            src="/icons/ByteHopperIcon.png"
+                            alt="Byte Hopper Logo"
+                            width="200"
+                            height="200"
+                    >
+                    <div class="project-overlay">
+                        <h3>Byte Hopper</h3>
+                        <p>Arcade Action Game with Procedural Generation</p>
+                        <a href="/projects/bytehopper/">View Project</a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="project-conclusion">
+        <p>
+            I'll be showcasing more projects in the future.<br>
+            Meanwhile, check out the rest of my projects on my GitHub.
+        </p>
+        <div class="button-container">
+            <a href="https://github.com/FranzLor?tab=repositories" class="btn">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<section id="devblog">
+    <h2>DEVBLOG</h2>
+    <div class="devblog-intro">
+        <p>
+            Dive into my development journey with tutorials and insights.<br>
+            These articles cover different aspects of game development<br>
+            such as coding patterns and game design.<br>
+            <strong>Click on a devblog to read more about it.</strong>
+        </p>
+    </div>
+
+    <div class="devblog-grid">
+        
+            <div class="devblog-post">
+                <div class="devblog-tile">
+                    <img
+                            src="/imgs/devblogs/pickups/Thumbnail.gif"
+                            alt="PickUps Preview"
+                            width="300"
+                            height="200"
+                    >
+                    <div class="devblog-overlay">
+                        <h3>Create Pickups for Your 2D Games</h3>
+                        <p>Learn how to implement a pickup system for 2D games using Unity</p>
+                        <span class="devblog-date">Apr 22, 2025</span>
+                        <a href="/devblogs/pickups/">Read Article</a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-main">
+        <h2>CONTACT</h2>
+        <p>
+            For career opportunities, game dev collaborations, and questions.<br>
+            Feel free to contact me anytime and I'll get back to you.<br>
+        </p>
+        <div class="contact-form-container">
+            <form onsubmit="return sendMail();">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" id="button"></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- Mobile / Tablet Project Tile -->
+<script>
+    // Add click event listener to all project tiles
+    document.querySelectorAll('.project-tile').forEach(tile => {
+        tile.addEventListener('click', function (e) {
+            // Remove 'active' class from other tiles
+            document.querySelectorAll('.project-tile.active').forEach(activeTile => {
+                if (activeTile !== tile) {
+                    activeTile.classList.remove('active');
+                }
+            });
+
+            // Toggle 'active' class on the clicked tile
+            this.classList.toggle('active');
+        });
+    });
+</script>
+
+
+<!-- Contact Form Button Animation -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const button = document.getElementById("button");
+        const form = document.querySelector("form");
+
+        if (button && form) {
+            button.addEventListener("click", function(event) {
+                if (form.checkValidity()) {
+                    // Button animation
+                    button.classList.add("onclic");
+
+                    setTimeout(function() {
+                        button.classList.remove("onclic");
+                        button.classList.add("validate");
+
+                        setTimeout(function() {
+                            button.classList.remove("validate");
+                        }, 1250);
+                    }, 2250);
+                } else {
+                    form.querySelector(":invalid").focus();
+                }
+            });
+        }
+    });
+</script>
+
+<!-- Smooth Scrolling from Clicks Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        smoothScrollLinks.forEach((link) => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                targetElement.scrollIntoView({
+                    behavior: "smooth",
+                });
+            });
+        });
+    });
+</script>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2>Franz Lor</h2>
+            <p>A Portfolio</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.linkedin.com/in/franz-lor-a19a04186/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/FranzLor" target="_blank">GitHub</a>
+            <a href="https://franzlor.itch.io/" target="_blank">Itch.io</a>
+            <a href="https://www.instagram.com/justfraaaanz/" target="_blank">Instagram</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2025. Developed by Franz Lor.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Load jQuery only if needed -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<!-- Core scripts -->
+<script src="/scripts/hamburger.js"></script>
+<script src="/scripts/smooth-scrolling.js"></script>
+
+<!-- Page-specific scripts -->
+
+    <script src="/scripts/scroll-animations.js"></script>
+    <script src="/scripts/devblog-animations.js"></script>
+    <script src="/scripts/contact-button-animations.js"></script>
+    <script src="/scripts/navigation.js"></script>
+
+    <script src="/scripts/validate.js"></script>
+
+    <!-- EmailJS only needed on homepage -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Monster Clicker</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Preload important resources -->
+    <link rel="preload" href="/scripts/hamburger.js" as="script">
+    <link rel="preload" href="/scripts/smooth-scrolling.js" as="script">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header>
+    <nav>
+        <!-- Left side of the navbar -->
+        <div class="navbar-left">
+            <a href="https://github.com/FranzLor" target="_blank" rel="noopener noreferrer">
+                <img src="/icons/GitHubIcon.png" alt="GitHub Profile Pic" width="40" height="40">
+            </a>
+            <span>FRANZ LOR</span>
+        </div>
+
+        <!-- Right side of the navbar -->
+        <div class="navbar-right">
+            <a href="/#about" class="nav-link">ABOUT</a>
+            <a href="/#projects" class="nav-link">PROJECTS</a>
+            <a href="/#devblog" class="nav-link">DEVBLOG</a>
+            <a href="https://www.nexusmods.com/users/81433168/?tab=user+files" target="_blank" rel="noopener noreferrer" class="nav-link">MODS</a>
+            <a href="/#contact" class="nav-link">CONTACT</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-btn" id="closeBtn"></div>
+        <a href="/#about" class="mobile-nav-link">ABOUT</a>
+        <a href="/#projects" class="mobile-nav-link">PROJECTS</a>
+        <a href="/#devblog" class="mobile-nav-link">DEVBLOG</a>
+        <a href="https://www.nexusmods.com/users/81433168/?tab=user+files" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">MODS</a>
+        <a href="/#contact" class="mobile-nav-link">CONTACT</a>
+    </div>
+</header>
+
+<main>
+    
+<section id="project-details">
+    <h2>Idle Monster Clicker</h2>
+    <h1>A 2D, Incremental Clicker Game</h1>
+
+    
+        <img src="/imgs/projects/idle/idle.png" alt="Idle Monster Clicker" width="400">
+    
+
+    <h3>Background</h3>
+    <p>Idle Monster Clicker is an incremental (nerdy way of saying clicking) game. <br></p>
+<p>The goal of the game is simple—click to defeat monsters, earn points, and unlock upgrades to make clicking more efficient.
+As an incremental game, the challenge was to design mechanics that kept players engaged, encouraging them to continue progressing, even when not actively playing.
+This project pushed me to think differently about game development, especially when relying solely on visual scripting rather than traditional code.</p>
+<img src="/imgs/projects/idle/idle-gif.gif" alt="Idle Monster Clicker Gameplay of Clicking">
+
+    
+        <h3>Technologies Used</h3>
+        <ul class="technologies">
+            
+                <li><img class="badge-img" src="https://img.shields.io/badge/Unreal%20Engine%205%20-%20black?style=for-the-badge" alt="Unity"></li>
+            
+                <li><img class="badge-img" src="https://img.shields.io/badge/Blueprint%20-%20grey?style=flat-square" alt="C#"></li>
+            
+        </ul>
+    
+
+    
+        <h3>What I Learned</h3>
+        
+            <h4>Unreal Engine&#39;s Blueprint System</h4>
+            <p>
+  After working on a few 2D projects,
+  I wanted this one to stand out—something different, something challenging. My idea?
+  Create an entire game in Unreal Engine 5 without writing a single line of code.<br><br>
+
+  I figured this would be a great way to test if I could translate
+  my programming knowledge into a visual scripting system.
+  Unreal Engine's Blueprint system was the perfect tool for this, but, I had no prior knowledge at the time.
+  I decided to dive in headfirst and see what I could come up with.
+  I failed, got frustrated, and failed again. This cycle kept going over and over. <br><br>
+
+  I spent countless hours debugging and learning from Unreal Engine’s forums and tutorials.
+  The Blueprint community is amazing, and their advice kept me pushing forward.
+  Slowly but surely, I got things working.
+  As cheesy as it sounds,
+  those small wins were enough to keep me going.<br><br>
+
+  By the end, I realized just how powerful the Blueprint system is for
+  <strong>rapid prototyping and visualizing ideas</strong>.
+  It’s a different way of thinking, but one that’s incredibly rewarding once you get the hang of it.<br><br>
+
+        
+            <h4>UI and UX Game Design</h4>
+            <p>
+  Idle Monster Clicker wasn’t just a test of my
+  Blueprint skills—it also taught me the importance of UI and UX design in game development.
+  For an incremental game like this, the interface is the experience.
+  If players can’t easily navigate the menus
+  or feel rewarded for their clicks, they’ll quickly lose interest.<br><br>
+
+  I used Unreal Engine’s UI Widgets to build intuitive menus,
+  buttons, and animations.
+  Every button press needed to feel satisfying,
+  so I added tactile feedback like sound effects and animations.
+  Whether it was purchasing an upgrade or slaying a monster,
+  the UI had to make players feel like they were constantly progressing.<br><br>
+
+  The challenge was balancing clarity with engagement.
+  Players needed to understand at a glance what upgrades did,
+  how much they cost, and how to unlock them—without a tutorial.
+  I designed the layout to be clean and accessible while also visually rewarding.<br><br>
+
+  <img src="/imgs/projects/idle/idle-ui.gif" alt="Idle Monster Clicker User Navigating Through UI">
+
+  Adding small details, like sound effects for button presses or satisfying visuals for monster defeats,
+  made all the difference.
+  This project taught me that good UI and UX isn’t just
+  about aesthetics—it’s about <strong> making every interaction
+  seamless and enjoyable</strong>. It’s the bridge between the player and the game,
+  and when done right, it keeps players coming back for more.<br><br>
+</p>
+
+        
+    
+
+    
+        <div class="project-link">
+            <div class="button-container">
+                <a href="https://franzlor.itch.io/byte-hopper" class="btn">View Project</a>
+            </div>
+        </div>
+    
+</section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2>Franz Lor</h2>
+            <p>A Portfolio</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.linkedin.com/in/franz-lor-a19a04186/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/FranzLor" target="_blank">GitHub</a>
+            <a href="https://franzlor.itch.io/" target="_blank">Itch.io</a>
+            <a href="https://www.instagram.com/justfraaaanz/" target="_blank">Instagram</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2025. Developed by Franz Lor.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Load jQuery only if needed -->
+
+
+<!-- Core scripts -->
+<script src="/scripts/hamburger.js"></script>
+<script src="/scripts/smooth-scrolling.js"></script>
+
+<!-- Page-specific scripts -->
+
+</body>
+</html>
