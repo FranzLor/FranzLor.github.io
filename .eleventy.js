@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
         'src/imgs': '/imgs'
     });
 
+    eleventyConfig.addPassthroughCopy("CNAME");
+
     // image renderer with lazy loading
     md.renderer.rules.image = (tokens, idx) => {
         const token = tokens[idx];
