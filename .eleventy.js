@@ -23,6 +23,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('imgs');
 
+    eleventyConfig.addPassthroughCopy("src/styles.css");
+
 
     // image renderer with lazy loading
     md.renderer.rules.image = (tokens, idx) => {
